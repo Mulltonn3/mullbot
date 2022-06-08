@@ -38,40 +38,8 @@
             background-color: #242424;
         }
 
-        .headline {
+        .he {
             color: #ffffff;
-            text-decoration: underline;
-        }
-
-        a {
-            color: #ffffff;
-            text-decoration: none;
-            margin-left: 7px;
-            font-weight: bold;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        ::selection {
-            background: #ffe600;
-            color: black;
-        }
-
-        .header-image {
-            width: 100%;
-            height: 70px;
-            object-fit: cover;
-            object-position: bottom;
-        }
-
-        .dh {
-            color: #5865F2;
-        }
-
-        .inv {
-            color: #ffe600;
         }
 
         .ba {
@@ -79,56 +47,87 @@
             text-decoration: none;
         }
 
+        .fd {
+            color: yellow;
+            text-decoration: underline;
+        }
+
+        .input {
+            width: 1000px;
+            height: 30px;
+            background-color: #242424;
+            color: #ffffff;
+            border: none;
+            border-bottom: 2px solid yellow;
+        }
+
+        .button {
+            width: 100px;
+            height: 40px;
+            background-color: #ff5e00;
+            border: none;
+            color: #000000;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        ::selection {
+            background: #ffe600;
+            color: black;
+        }
+
+        .demo-list {
+            width: 300px;
+        }
+
     </style>
+
+
+    <script>
+    	function addSuggestion() {
+
+            sugglist.innerHTML += `
+                 <li class="demo-list">
+                    ${suggfield.value}
+                </li>
+            `;
+
+        }
+    </script>
 
 </head>
 
+<h1 style="color: red">currently working on it</h1>
+
 <body>
-<h1 class="headline">Müllbot<br></h1>
-
-   
-
-Bot von Troll#9931 aka. Mülltonne
-
-
-        <br>
-        <img class="header-image" src="img/header.png">
+    <h1 class="he"><u>Suggestions</u></h1>
+<br><br>
 <br>
 
-    <br>
-    <br>
+<h3 class="fd">add suggestion</h3>
 
-<h2>Was kann Müllbot?</h2>
-prefix: m! / M!
-<br>
-<br>
-Müllbot ist so wie viele andere Bots.
-<br>
-Er kann User bannen/kicken, kann die Userinfo von einem User anzeigen usw. alle commands findest du<a href="commands.html">hier</a>
-<br>
-<br>
-all commands<a href="commands.html">here</a>
-<br>
-<br>
-<br>
-<a class="inv" href="https://dsc.gg/m%C3%BCllbot">Müllbot einladen</a> ⇦
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>currently working on<br>
-<a href="suggestions.html" style="color:#009100">(Suggestions)</a>
+<form onsubmit="addSuggestion()">
+    <input class="input" placeholder="Text eingeben" type="text" id="suggfield">  
+    <button type="submit" class="button" for="suggfield">Hinzufügen</button>
+</form>
+
+<br><br>
+<br><br>
+<br><br>
+
+
+    <ul class="demo-list" id="sugglist">
+    
+    </ul>
+
+
 <br>
 <br>
 <br>
 <br>
-    any questions?<br> Troll#9931 /<a href="https://discord.gg/GhKBa4CfQg">https://discord.gg/GhKBa4CfQg</a>
-    <br>
-    <br>
-    <br>
-    <br>
-    ⇦ <a class="ba" href="index.html">zurück / back</a>    
-    </body>
+
+⇦ <a class="ba" href="müllbot.html">zurück / back</a>
+</body>
+
 
 </html>
