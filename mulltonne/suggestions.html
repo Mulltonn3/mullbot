@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,13 +8,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <style>
         body {
             font-family: 'Open Sans', sans-serif;
             color: #ffffff;
             background-color: #242424;
-            padding-left: 100px;
-            padding-right: 100px;
+            padding-left: 40px;
+            padding-right: 40px;
         }
 
         ::-webkit-scrollbar {
@@ -38,8 +38,18 @@
             background-color: #242424;
         }
 
+        a:hover {
+            text-decoration: underline;
+        }
+
         .he {
-            color: #ffffff;
+            color: yellow;
+            font-size: 9vmin;
+            text-decoration: underline;
+            position: center;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
         }
 
         .ba {
@@ -53,7 +63,7 @@
         }
 
         .input {
-            width: 1000px;
+            width: 60%;
             height: 30px;
             background-color: #242424;
             color: #ffffff;
@@ -62,7 +72,7 @@
         }
 
         .button {
-            width: 100px;
+            width: 40vmin;
             height: 40px;
             background-color: #ff5e00;
             border: none;
@@ -80,19 +90,22 @@
             width: 300px;
         }
 
+        br {
+            user-select: none;
+        }
+
+        .ba {
+            color: #969696;
+            text-decoration: none;
+            font-size: 3vmin;
+        }
+
     </style>
 
 
     <script>
-    	function addSuggestion() {
-
-            sugglist.innerHTML += `
-                 <li class="demo-list">
-                    ${suggfield.value}
-                </li>
-            `;
-
-        }
+    	
+        
     </script>
 
 </head>
@@ -100,33 +113,29 @@
 <h1 style="color: red">currently working on it</h1>
 
 <body>
-    <h1 class="he"><u>Suggestions</u></h1>
-<br><br>
+
+<h1 class="he"><u>Suggestions</u></h1>
+<br>
+<br>
 <br>
 
 <h3 class="fd">add suggestion</h3>
 
-<form onsubmit="addSuggestion()">
-    <input class="input" placeholder="Text eingeben" type="text" id="suggfield">  
-    <button type="submit" class="button" for="suggfield">Hinzufügen</button>
-</form>
+
+<input class="input" placeholder="Text eingeben" type="text" id="suggfield"> <button id="buton" type="button" class="button" for="suggfield">add</button>
+
+
 
 <br><br>
 <br><br>
 <br><br>
 
-
-    <ul class="demo-list" id="sugglist">
-    
-    </ul>
-
-
 <br>
 <br>
 <br>
 <br>
 
-⇦ <a class="ba" href="müllbot.html">zurück / back</a>
+<a class="ba" href="mullbot.html">⇦ zurück / back</a>
 </body>
 
 
